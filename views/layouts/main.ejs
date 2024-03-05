@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-----------Font Awesome icons--------->
+    <script src="https://kit.fontawesome.com/55acaa2810.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <!-- bootstrap cdn css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Domine:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- local css -->
+    <link rel="stylesheet" href="/css/custom.css">
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <title>Track Edge Technologies</title>
+</head>
+
+<body>
+    <!-- Nav section -->
+    <nav class="navbar navbar-light background sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img class="logo" src="/images/tetlogo1.png" alt=""><span><img
+                        class="logo2" src="/images/tet4logo.png"></span></a>
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand text-light navlinks" href="/about">ABOUT US</a>
+                <a class="navbar-brand text-light navlinks" href="/industry">OUR PARTNERS</a>
+                <a class="navbar-brand text-light navlinks" href="/services">OUR SERVICES</a>
+                <a class="navbar-brand text-light navlinks" href="/whyUs">WHY US</a>
+
+                <a class="btn btn-nav" href="/contacts" role="button ">CONTACT US</a>
+                <a class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <i class="fas fa-bars px-3 fontColor fs-5"></i>
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header background">
+                    <h5 class="offcanvas-title fw-bold fontColor" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body background">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center text-light fs-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="/">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="/about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="/industry">OUR PARTNERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="/services">OUR SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="/whyUs">WHY US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="/privacy">PRIVACY POLICY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" href="/contacts">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <main>
+        <%- body %>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-div d-flex px-4 pt-3">
+            <a class="navbar-brand text-light footerlinks" href="/">HOME</a>
+            <a class="navbar-brand text-light footerlinks" href="/about">ABOUT US</a>
+            <a class="navbar-brand text-light footerlinks" href="/industry">OUR PARTNERS</a>
+            <a class="navbar-brand text-light footerlinks" href="/services">OUR SERVICES</a>
+            <a class="navbar-brand text-light footerlinks" href="/whyUs">WHY US</a>
+            <a class="navbar-brand text-light footerlinks" href="/privacy">PRIVACY</a>
+            <a class="navbar-brand text-light footerlinks" href="/contacts">CONTACT US</a>
+        </div>
+        <hr class="text-light">
+        <div class="text-light text-center px-4 py-2">
+            <p class="footer-text">
+                All rights reserved<br>
+                &copy; <%= new Date().getFullYear(); %> Track Edge Technologies <br>
+                    A <a href="tel:0707898224" class="text-light">Presidens Digital</a> site
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

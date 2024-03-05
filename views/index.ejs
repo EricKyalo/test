@@ -1,0 +1,61 @@
+<section class="p-5">
+    <h1 class="text-center fontColor">
+        Testing
+    </h1>
+    <p class="text-center">
+        Not sure which Track Edge product is the right fit for your company? No worries. We'll work with you
+        to
+        determine what solutions will best suit your business.
+    </p>
+    <!-- Form -->
+    <!-- flash message -->
+    <% if ( success.length> 0 ) { %>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <%= success %>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <% } %>
+            <div class="indCaption contactForm">
+                <form class="" action="" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="First Name*" name="firstName"
+                            id="firstName" aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Last Name*" name="lastName" id="lastName"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Email address*" name="email" id="email"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="tel" class="form-control" placeholder="Phone*" class="tel" name="phone"
+                            required=true id="phone">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Company Name*" class="tel"
+                            name="companyName" required=true id="companyName">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" class="tel" placeholder="Message" name="message" required=true
+                            id="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-color text-light">Submit</button>
+                </form>
+            </div>
+            <p class="text-center pt-5 pb-3">From questions about pricing to one-on-one personalized demos, we'd love to
+                connect
+                and help
+                get you started.</p>
+            <h1 class="text-center fontColor pb-3 ">You can also reach us through...</h1>
+            <div class="d-flex contactDiv indCaption  py-4">
+                <a href="mailto:info@trackedgetechnologies.com" class="contactLinks fontColor"><i
+                        class="px-2 fa fa-envelope" aria-hidden="true"></i>info@trackedgetechnologies.com</a>
+
+                <a href="mailto:support@trackedgetechnologies.com" class="contactLinks fontColor"><i
+                        class=" px-2 fa fa-envelope" aria-hidden="true"></i>sales@trackedgetechnologies.com</a>
+            </div>
+</section>
